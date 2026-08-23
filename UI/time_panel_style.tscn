@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://dhmdtpy6c7hmg"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ubuyv"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="TimePanel" type="PanelContainer" unique_id=2129839257]
+offset_left = 10.0
+offset_top = 50.0
+offset_right = 50.0
+offset_bottom = 111.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_ubuyv")
+
+[node name="TimeLabel" type="Label" parent="." unique_id=800061866]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/outline_size = 6
+theme_override_font_sizes/font_size = 32

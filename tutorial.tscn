@@ -1,0 +1,160 @@
+[gd_scene format=3 uid="uid://bgc6bcoomb48r"]
+
+[ext_resource type="Script" uid="uid://27k5n28dah8h" path="res://tutorial.gd" id="1_yb1ct"]
+[ext_resource type="PackedScene" uid="uid://b3t47t8l4w618" path="res://bg.tscn" id="2_ehuit"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_yb1ct"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ehuit"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_5mrt3"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rwowx"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.023529412, 0.023529412, 0.015686275, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_hu44a"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[node name="menu" type="Node2D" unique_id=262981557]
+script = ExtResource("1_yb1ct")
+
+[node name="ControlsPanel" type="Panel" parent="." unique_id=520186119]
+offset_left = 409.0
+offset_top = 90.0
+offset_right = 786.0
+offset_bottom = 410.0
+theme_override_styles/panel = SubResource("StyleBoxFlat_yb1ct")
+
+[node name="TutorialTitleLabel" type="Label" parent="." unique_id=147068391]
+offset_left = 450.0
+offset_top = 100.0
+offset_right = 650.0
+offset_bottom = 169.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 50
+text = "ntcn"
+
+[node name="ControlMoveLabel" type="Label" parent="." unique_id=1272559478]
+offset_left = 450.0
+offset_top = 200.0
+offset_right = 650.0
+offset_bottom = 260.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 36
+
+[node name="ControlAttackLabel" type="Label" parent="." unique_id=1096574464]
+offset_left = 450.0
+offset_top = 300.0
+offset_right = 650.0
+offset_bottom = 360.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 36
+
+[node name="ControlJumpLabel" type="Label" parent="." unique_id=700647659]
+offset_left = 450.0
+offset_top = 250.0
+offset_right = 650.0
+offset_bottom = 310.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 36
+
+[node name="ControlHealLabel" type="Label" parent="." unique_id=1181725665]
+offset_left = 450.0
+offset_top = 350.0
+offset_right = 650.0
+offset_bottom = 410.0
+theme_override_colors/font_color = Color(1, 0.84313726, 0, 1)
+theme_override_font_sizes/font_size = 26
+
+[node name="SkipButton" type="Button" parent="." unique_id=2073262817]
+offset_left = 427.0
+offset_top = 433.0
+offset_right = 740.0
+offset_bottom = 518.0
+theme_override_colors/font_hover_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_ehuit")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_5mrt3")
+theme_override_styles/hover = SubResource("StyleBoxFlat_rwowx")
+theme_override_styles/focus = SubResource("StyleBoxFlat_hu44a")
+text = "Пропустить"
+
+[node name="BG" parent="." unique_id=176593723 instance=ExtResource("2_ehuit")]
+
+[node name="BG2" parent="." unique_id=1485242110 instance=ExtResource("2_ehuit")]
+
+[node name="BG3" parent="." unique_id=1489768047 instance=ExtResource("2_ehuit")]
+
+[node name="BG4" parent="." unique_id=1294549661 instance=ExtResource("2_ehuit")]
+
+[node name="BG5" parent="." unique_id=1219678940 instance=ExtResource("2_ehuit")]
+
+[connection signal="pressed" from="SkipButton" to="." method="_on_skip_button_pressed"]

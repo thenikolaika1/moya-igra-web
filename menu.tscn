@@ -1,0 +1,182 @@
+[gd_scene format=3 uid="uid://dy46r578wlo5h"]
+
+[ext_resource type="Script" uid="uid://djo8rvi4pp0ld" path="res://menu.gd" id="1_lti8b"]
+[ext_resource type="PackedScene" uid="uid://b3t47t8l4w618" path="res://bg.tscn" id="2_ouk20"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_4hy44"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ouk20"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.023529412, 0.023529412, 0.015686275, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_mae5d"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.101960786, 0.101960786, 0.101960786, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ytr4m"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.022104243, 0.023222677, 0.014666912, 0.8)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecwwl"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.3529412, 0.22745098, 0.10980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8, 0.4, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_l48gv"]
+content_margin_left = 8.0
+content_margin_top = 8.0
+content_margin_right = 8.0
+content_margin_bottom = 8.0
+bg_color = Color(0.3529412, 0.22745098, 0.10980392, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(1, 0.8, 0.4, 1)
+corner_radius_top_left = 8
+corner_radius_top_right = 8
+corner_radius_bottom_right = 8
+corner_radius_bottom_left = 8
+
+[node name="menu" type="Node2D" unique_id=262981557]
+script = ExtResource("1_lti8b")
+
+[node name="PLAY" type="Button" parent="." unique_id=1828720498]
+offset_left = 262.0
+offset_top = 19.0
+offset_right = 895.0
+offset_bottom = 139.0
+theme_override_colors/font_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_pressed_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_hover_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_4hy44")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ouk20")
+theme_override_styles/focus = SubResource("StyleBoxFlat_4hy44")
+text = "PLAY"
+
+[node name="QUIT" type="Button" parent="." unique_id=1017586009]
+offset_left = 262.0
+offset_top = 164.0
+offset_right = 895.0
+offset_bottom = 284.0
+theme_override_colors/font_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_pressed_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_hover_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ytr4m")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mae5d")
+text = "QUIT"
+
+[node name="EnButton" type="Button" parent="." unique_id=1606018836]
+offset_left = 599.0
+offset_top = 325.0
+offset_right = 799.0
+offset_bottom = 410.0
+theme_override_colors/font_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_pressed_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_hover_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_ecwwl")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mae5d")
+text = "EN"
+
+[node name="RuButton" type="Button" parent="." unique_id=64112349]
+offset_left = 380.0
+offset_top = 325.0
+offset_right = 580.0
+offset_bottom = 410.0
+theme_override_colors/font_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_focus_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_pressed_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_colors/font_hover_color = Color(0.95686275, 0.8156863, 0.24705882, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_mae5d")
+theme_override_styles/hover = SubResource("StyleBoxFlat_l48gv")
+theme_override_styles/focus = SubResource("StyleBoxFlat_mae5d")
+text = "RU"
+
+[node name="BG" parent="." unique_id=176593723 instance=ExtResource("2_ouk20")]
+
+[node name="BG2" parent="." unique_id=1485242110 instance=ExtResource("2_ouk20")]
+
+[node name="BG3" parent="." unique_id=1489768047 instance=ExtResource("2_ouk20")]
+
+[node name="BG4" parent="." unique_id=1294549661 instance=ExtResource("2_ouk20")]
+
+[node name="BG5" parent="." unique_id=1219678940 instance=ExtResource("2_ouk20")]
+
+[connection signal="pressed" from="PLAY" to="." method="_on_play_pressed"]
+[connection signal="pressed" from="QUIT" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="EnButton" to="." method="_on_en_button_pressed"]
+[connection signal="pressed" from="RuButton" to="." method="_on_ru_button_pressed"]
