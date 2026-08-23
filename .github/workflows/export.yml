@@ -13,6 +13,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Export game
+        id: export
         uses: firebelley/godot-export@v8.0.0
         with:
           godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip
@@ -25,4 +26,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: web-build
-          path: "**/*.zip"
+          path: ${{ steps.export.outputs.archive_directory }}
