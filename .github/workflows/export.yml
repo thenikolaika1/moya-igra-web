@@ -32,7 +32,7 @@ jobs:
           archive_output: false
 
       - name: List exported files (debug)
-        run: find ${{ steps.export.outputs.archive_directory }} -maxdepth 3
+        run: find ${{ steps.export.outputs.export_directory }} -maxdepth 3
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -40,7 +40,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ steps.export.outputs.archive_directory }}/Web
+          path: ${{ steps.export.outputs.export_directory }}/Web
 
       - name: Deploy to GitHub Pages
         id: deployment
