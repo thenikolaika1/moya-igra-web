@@ -29,10 +29,13 @@ jobs:
           godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip
           godot_export_templates_download_url: https://github.com/godotengine/godot/releases/download/4.7-stable/Godot_v4.7-stable_export_templates.tpz
           relative_project_path: ./
-          archive_output: false
+          archive_output: true
 
-      - name: List exported files (debug)
-        run: find ${{ steps.export.outputs.export_directory }} -maxdepth 3
+      - name: Unzip export
+        run: |
+          mkdir -p public
+          find ${{ steps.export.outputs.archive_directory }} -name "*.zip" -exec unzip -o {} -d public \;
+          ls -la public
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
@@ -40,7 +43,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ${{ steps.export.outputs.export_directory }}/Web
+          path: public
 
       - name: Deploy to GitHub Pages
         id: deployment
