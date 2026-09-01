@@ -23,6 +23,7 @@ jobs:
         uses: actions/checkout@v5
 
       - name: Export game
+        id: export
         uses: firebelley/godot-export@v8.0.0
         with:
           godot_executable_download_url: https://github.com/godotengine/godot/releases/download/4.7-stable/Godot_v4.7-stable_linux.x86_64.zip
@@ -30,13 +31,16 @@ jobs:
           relative_project_path: ./
           archive_output: false
 
+      - name: List exported files (debug)
+        run: find ${{ steps.export.outputs.archive_directory }} -maxdepth 3
+
       - name: Setup Pages
         uses: actions/configure-pages@v5
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: web
+          path: ${{ steps.export.outputs.archive_directory }}/Web
 
       - name: Deploy to GitHub Pages
         id: deployment
